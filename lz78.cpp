@@ -204,7 +204,7 @@ int main(int argc, char **argv){
         // arq_in="os_lusiadas2.z78";
         // modo=1;
         cout<<"Informe ao menos o arquivo de entrada\n";
-        cout<<"Formato certo: ./lz78 <-c ou -x> <arquivo_entrada> [-o <arquivo_saida>]";
+        cout<<"Formato certo: ./lz78 <-c ou -x> <arquivo_entrada> [-o <arquivo_saida>]\n";
         return 0;
     }
     if(arq_out==""){
