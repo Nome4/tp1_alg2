@@ -98,9 +98,6 @@ void comprimir(istream &in, ofstream &out){
         }
     }
 
-    // bool a=root->children.find('r')==root->children.end();
-    // bool a2=root->children.find('o')==root->children.end();
-    // bool a3=root->children['r']->children.find('o')==root->children.end();
     write_ind(curr->ind);
     delete root;
     write_buf.close();
@@ -156,9 +153,6 @@ void descomprimir(istream &in, ofstream &out){
                 goto end;
             }
             ind|=(unsigned char)c<<8*(nbytes-i-1);
-            // if(ind<0 || ind>=nodes.size()){
-            //     cout<<"sus\n";
-            // }
         }
 
         string decoded="";
@@ -197,12 +191,6 @@ int main(int argc, char **argv){
     }
     
     if(arq_in==""){
-        // arq_in="teste.txt";
-        // modo=0;
-        // arq_in="teste2.z78";
-        // modo=1;
-        // arq_in="os_lusiadas2.z78";
-        // modo=1;
         cout<<"Informe ao menos o arquivo de entrada\n";
         cout<<"Formato certo: ./lz78 <-c ou -x> <arquivo_entrada> [-o <arquivo_saida>]\n";
         return 0;
